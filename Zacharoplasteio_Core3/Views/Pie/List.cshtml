@@ -1,0 +1,14 @@
+﻿@model PiesListViewModel // reads the namespace from _VeiwImports.cshtml 
+
+
+<h1>@Model.CurrentCategory</h1>
+
+@foreach (var pie in Model.Pies)
+{
+    <div>
+
+        <h2>@pie.Price.ToString("c")</h2>
+        <h3>@pie.Name</h3>
+        <h4>@pie.ShortDescription</h4>
+    </div>
+}
